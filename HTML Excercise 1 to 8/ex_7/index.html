@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Create User</title>
+<meta charset="utf-8">
+</head>
+<body>
+    <h1>Create User</h1>
+    <hr>
+    <form action="create-user.html" method="get">
+        <label><strong>Email:</strong></label>
+        <input name="email" placeholder="email" type="password"><br>
+        <label><strong>User Name:</strong></label>
+        <input name="username" placeholder="username" maxlength="12" size="30"><br>
+        <label><strong>Password:</strong></label>
+        <input name="password" placeholder="password" maxlength="8" size="30" required ><br>
+        <label><strong>Bio:</strong></label><br>
+        <textarea name="bio" placeholder="give a brief description of this user"></textarea>
+        <fieldset>
+            <legend>Interests</legend>
+            Select your favourite superhero
+<input type="radio" name="superhero" value="true" />Superman 
+<input type="radio" name="superhero" value="true" /> Batman
+<input type="radio" name="superhero" value="true" checked /> Wonder Woman
+<input type="radio" name="superhero" value="true" /> Flash
+<input type="radio" name="superhero" value="true" /> Thor
+<input type="radio" name="superhero" value="true" /> Hulk<br>
+
+Select your favourite video game
+<input type="checkbox" name="videogames" value="true" checked /> Fifa
+<input type="checkbox" name="videogames" value="true" /> NHL
+<input type="checkbox" name="videogames" value="true" /> Resident Evil
+<input type="checkbox" name="videogames" value="true" checked /> Uncharted
+        </fieldset>
+
+<input type="hidden" name="userid" value="2300" /> 
+<button>Create User</button>
+</form>
+
+</body>
+</html>
